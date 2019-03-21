@@ -17,17 +17,16 @@
             if (dArray[i] == " "){
                 count++
                 if (count % 2 === 0){
-                    dArray.splice(i, 1, ",")
+                    dArray.splice(i, 1, "<br />",)
                 }
             }
         }
-    console.log(dArray.join(""))
-    document.getElementById('results').innerHTML = dArray.join("");
-    
+    dArray = dArray.join('')
+    document.getElementById('results').innerHTML = dArray
     }
     
     </script>
     
     Text: <textarea type="text" id="string" value="2" style="width: 400; height: 150;" ></textarea>
-    <input type=button value="Process" onClick="delimit()"><br>
-    <span id="results">(click "Process")</span>
+    <br><input type=button value="Process" onClick="delimit()"></br>
+    <br><span id="results">(click "Process")</br>
