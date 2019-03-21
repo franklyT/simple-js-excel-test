@@ -21,6 +21,12 @@
                 }
             }
         }
+
+        for (let q = 0; q < dArray.length; q++){
+            if (dArray[q] == "I" && dArray[q-1] !== " " && dArray[q-1] !== "I"){
+            dArray.splice(q,0,' ')
+            }
+        }
     dArray = dArray.join('')
     document.getElementById('results').innerHTML = dArray
     }
