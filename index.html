@@ -1,7 +1,27 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<script>
+    function delimit(){
+        let dArray = Array.from(document.getElementById('string').value)
+        let count = 0
+        for (let i = 0; i < dArray.length; i++){
+            if (dArray[i] == " "){
+                count++
+                if (count % 2 === 0){
+                    dArray.splice(i, 1, ",")
+                }
+            }
+        }
+    console.log(dArray.join(""))
+    document.getElementById('results').innerHTML = dArray.join("");
+    
+    }
+    
+    function calculate_this() {
+      var input = document.getElementById('text').value;
+      var results = eval(input);
+      document.getElementById('results').innerHTML = results;
+    }
+    </script>
+    
+    Text: <textarea type="text" id="string" value="2" style="width: 400; height: 150;" ></textarea>
+    <input type=button value="Process" onClick="delimit()"><br>
+    <span id="results">(click "Process")</span>
