@@ -20,7 +20,9 @@ dArray[i] != "sr." &&
 dArray[i] != "sr" &&
 dArray[i] != "esq" &&
 dArray[i] != "Esq." &&
-dArray[i] != "esq."
+dArray[i] != "esq." &&
+dArray[i] != "De" &&
+dArray[i] != "La"
 ){
 counter++
 }
@@ -39,7 +41,9 @@ dArray[i] == "sr." ||
 dArray[i] == "sr" ||
 dArray[i] == "esq" ||
 dArray[i] == "Esq." ||
-dArray[i] == "esq.")
+dArray[i] == "esq." ||
+dArray[i] != "De" ||
+dArray[i] != "La")
 {
     dArray.splice(i, 1, " "+dArray[i])
 }
