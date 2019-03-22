@@ -1,63 +1,25 @@
 <script>
     function delimit(){
+        let banWords = ["II", "III", "IV", "V", "JR", "JR.", "SR", "SR.", "ESQ", "ESQ.", "DE", "LA", "LE", "VAN", "DER", "DEL", "DELLA", "E", "VON"]
+            let banCount = 0
         let qArray = document.getElementById('string').value
-        let dArray = qArray.split(" ")
-        let counter = 0
+            let dArray = qArray.split(" ")
+            let counter = 0
         
-        for (let i = 0; i < dArray.length; i++){
-if (
-dArray[i] != "II" &&
-dArray[i] != "III" &&
-dArray[i] != "IV" &&
-dArray[i] != "V" &&
-dArray[i] != "jr" &&
-dArray[i] != "jr." &&
-dArray[i] != "Jr" &&
-dArray[i] != "Jr." &&
-dArray[i] != "Sr." &&
-dArray[i] != "Sr" &&
-dArray[i] != "sr." &&
-dArray[i] != "sr" &&
-dArray[i] != "esq" &&
-dArray[i] != "Esq." &&
-dArray[i] != "esq." &&
-dArray[i] != "De" &&
-dArray[i] != "La" &&
-dArray[i] != "Van" &&
-dArray[i] != "Der" &&
-dArray[i] != "Del" &&
-dArray[i] != "Della" &&
-dArray[i] != "de" &&
-dArray[i] != "Von" 
-){
+        
+        aloop: for (let i = 0; i < dArray.length; i++){
+            bloop: for (let b = 0; b < banWords.length; b++){
+                if (dArray[i].toUpperCase() == banWords[b]){
+                    banCount++
+                    dArray.splice(i, 1, " " + dArray[i])
+                    break bloop;
+                }
+            }
+if (banCount == 0){
 counter++
 }
-if (
-dArray[i] == "II" ||
-dArray[i] == "III" ||
-dArray[i] == "IV" ||
-dArray[i] == "V" ||
-dArray[i] == "jr" ||
-dArray[i] == "jr." ||
-dArray[i] == "Jr" ||
-dArray[i] == "Jr." ||
-dArray[i] == "Sr." ||
-dArray[i] == "Sr" ||
-dArray[i] == "sr." ||
-dArray[i] == "sr" ||
-dArray[i] == "esq" ||
-dArray[i] == "Esq." ||
-dArray[i] == "esq." ||
-dArray[i] == "De" ||
-dArray[i] == "La" ||
-dArray[i] == "Var" ||
-dArray[i] == "Der" ||
-dArray[i] == "Del" ||
-dArray[i] == "Della" ||
-dArray[i] == "de" ||
-dArray[i] == "Von"  )
-{
-    dArray.splice(i, 1, " "+dArray[i])
+else {
+banCount--
 }
 if (counter % 4 == 0){
     dArray.splice(i, 0, "<br>")
