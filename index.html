@@ -7,12 +7,12 @@
             let counter = 0
         
         
-        aloop: for (let i = 0; i < dArray.length; i++){
-            bloop: for (let b = 0; b < banWords.length; b++){
+        checkInput: for (let i = 0; i < dArray.length; i++){
+            checkBans: for (let b = 0; b < banWords.length; b++){
                 if (dArray[i].toUpperCase() == banWords[b]){
-                    banCount++
-                    dArray.splice(i, 1, " " + dArray[i])
-                    break bloop;
+                    banCount++ // Used to capture ban word match
+                    dArray.splice(i, 1, " " + dArray[i]) // Used to eliminate fusion between ban word and prior word
+                    break spanBans; // Used to halt comparison between input interator and ban list after match
                 }
             }
 if (banCount == 0){
