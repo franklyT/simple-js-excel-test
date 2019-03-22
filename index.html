@@ -1,32 +1,56 @@
 <script>
     function delimit(){
-        let dArray = Array.from(document.getElementById('string').value)
-        let count = 0
-        let count2 = dArray.length
-        
-        for (let z = 0; z < count2; z++){
-        if (dArray[z] == "I"){
-        if (dArray[z-1] == " "){
-        dArray.splice(z-1, 1)
-
-        } 
-      }
-      }
+        let qArray = document.getElementById('string').value
+        let dArray = qArray.split(" ")
+        let counter = 0
         
         for (let i = 0; i < dArray.length; i++){
-            if (dArray[i] == " "){
-                count++
-                if (count % 2 === 0){
-                    dArray.splice(i, 1, "<br />",)
-                }
-            }
-        }
+if (
+dArray[i] != "II" &&
+dArray[i] != "III" &&
+dArray[i] != "IV" &&
+dArray[i] != "V" &&
+dArray[i] != "jr" &&
+dArray[i] != "jr." &&
+dArray[i] != "Jr" &&
+dArray[i] != "Jr." &&
+dArray[i] != "Sr." &&
+dArray[i] != "Sr" &&
+dArray[i] != "sr." &&
+dArray[i] != "sr" &&
+dArray[i] != "esq" &&
+dArray[i] != "Esq." &&
+dArray[i] != "esq."
+){
+counter++
+}
+if (
+dArray[i] == "II" ||
+dArray[i] == "III" ||
+dArray[i] == "IV" ||
+dArray[i] == "V" ||
+dArray[i] == "jr" ||
+dArray[i] == "jr." ||
+dArray[i] == "Jr" ||
+dArray[i] == "Jr." ||
+dArray[i] == "Sr." ||
+dArray[i] == "Sr" ||
+dArray[i] == "sr." ||
+dArray[i] == "sr" ||
+dArray[i] == "esq" ||
+dArray[i] == "Esq." ||
+dArray[i] == "esq.")
+{
+    dArray.splice(i, 1, " "+dArray[i])
+}
+if (counter % 4 == 0){
+    dArray.splice(i, 0, "<br>")
+}
+else if (counter % 2 == 0){
+    dArray.splice(i, 0, " ")
+}
+}
 
-        for (let q = 0; q < dArray.length; q++){
-            if (dArray[q] == "I" && dArray[q-1] !== " " && dArray[q-1] !== "I"){
-            dArray.splice(q,0,' ')
-            }
-        }
     dArray = dArray.join('')
     document.getElementById('results').innerHTML = dArray
     }
