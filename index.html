@@ -1,6 +1,8 @@
 <script>
     function delimit(){
-        let banWords = ["II", "III", "IV", "V", "JR", "JR.", "SR", "SR.", "ESQ", "ESQ.", "DE", "LA", "LE", "VAN", "DER", "DEL", "DELLA", "E", "VON"]
+        let banWords = ["II", "III", "IV", "V", "JR", "JR.", "SR", "SR.", "ESQ", "ESQ.", "DE", "LA", "LE", "VAN", "DER",
+        "DEL", "DELLA", "E", "VON", "AL", "BEN", "BIN", "DA", "DAS", "DEN", "DI", "DO", "DOS", "D'", "DU", "EL", "IL",
+        "L'", "MAC", "MC", "O'", "SAINT", "SAINTE", "ST.", "STE.", "TEN", "TER", "V.", "V.D.", "SEN", "ZUM"]
             let banCount = 0
         let qArray = document.getElementById('string').value
             let dArray = qArray.split(" ")
@@ -12,7 +14,7 @@
                 if (dArray[i].toUpperCase() == banWords[b]){
                     banCount++ // Used to capture ban word match
                     dArray.splice(i, 1, " " + dArray[i]) // Used to eliminate fusion between ban word and prior word
-                    break spanBans; // Used to halt comparison between input interator and ban list after match
+                    break checkBans; // Used to halt comparison between input interator and ban list after match
                 }
             }
 if (banCount == 0){
