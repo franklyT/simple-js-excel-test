@@ -5,7 +5,6 @@ Repo in GitHub Pages
 Created under the premise of efficiently fulfilling co-worker's basic request to clean and prepare data formatted as a raw list of first and last names with no delimiters.
 
 
-
 Theory
 
 If I introduced Gallywazzlefiddlypants McAlienface, you'd be able to understand and use his name without having an explicit reference for either name component. Humans do not have an endless library of names in their heads. This is important for my current employer, whom operates in an international context, as a dictionary of first and last names to reference would almost certainly be incomplete, and heavily cumbersome.
