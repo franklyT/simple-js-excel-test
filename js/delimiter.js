@@ -3,7 +3,7 @@
     document.getElementById("string").value = "";
     }
     const delimit = () => {
-        const banWords = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", 
+        const banDictionary = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", 
                           "S", "T", "U", "V", "W", "X", "Y", "Z", "II", "III", "IV", "V", "JR", "SR", "ESQ", "DE", "LA", "LE", 
                           "VAN", "DER", "DEL", "DELLA", "VON", "AL", "BEN", "BIN", "DA", "DAS", "DEN", "DI", "DO", "DOS", "DU",
                           "EL", "IL", "MAC", "MC", "SAINT", "SAINTE", "ST", "STE", "TEN", "TER", "VD", "SEN", "ZUM"]
@@ -13,9 +13,9 @@
         banCount = 0
         // Capture ban word match, eliminate fusion between ban word + prior word, halt comparison after match
         checkInput: for (let i = 0; i < dArray.length; i++){
-            checkBans: for (let b = 0; b < banWords.length; b++){
-                if (dArray[i].toUpperCase() == banWords[b] || dArray[i].toUpperCase() == banWords[b]+"."
-                    || dArray[i].toUpperCase() == banWords[b]+"'"){
+            checkBans: for (let b = 0; b < banDictionary.length; b++){
+                if (dArray[i].toUpperCase() == banDictionary[b] || dArray[i].toUpperCase() == banDictionary[b]+"."
+                    || dArray[i].toUpperCase() == banDictionary[b]+"'"){
                     banCount++ 
                     dArray.splice(i, 1, " " + dArray[i])
                     break checkBans;
