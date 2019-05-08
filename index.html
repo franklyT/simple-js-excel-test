@@ -6,7 +6,11 @@
 </head>
 <body>
 <script>
-    function delimit(){
+    const clearAll = () => {
+    document.getElementById("results").innerHTML = ""; 
+    document.getElementById("text").innerHTML = "";
+    }
+    const delimit = () => {
         let banWords = ["II", "III", "IV", "V", "JR", "JR.", "SR", "SR.", "ESQ", "ESQ.", "DE", "LA", "LE", "VAN", "DER",
         "DEL", "DELLA", "E", "VON", "AL", "BEN", "BIN", "DA", "DAS", "DEN", "DI", "DO", "DOS", "D'", "DU", "EL", "IL",
         "L'", "MAC", "MC", "O'", "SAINT", "SAINTE", "ST.", "STE.", "TEN", "TER", "V.", "V.D.", "SEN", "ZUM"],
@@ -45,9 +49,7 @@
 <textarea type="text" id="string" value="2" style="width: 400; height: 150;" >Fish McFish Jr. Fishy Fisherton Sr Steve Waterson</textarea>
 <br><input type=button value="Process" onClick="delimit()">
 </br>
-<br><input type=button value="Clear" onClick="
-    document.getElementById("results").innerHTML = "" ; 
-    document.getElementById("text").innerHTML = "" ">
+<br><input type=button value="Clear" onClick="clearAll()">
 </br>
 <br><span id="results">(click "Process")
 </br>
