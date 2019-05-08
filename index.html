@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <head>
+<meta charset="UTF-8">
+<title>simple-js-excel-test
+</title>
 </head>
 <body>
 <script>
     function delimit(){
         let banWords = ["II", "III", "IV", "V", "JR", "JR.", "SR", "SR.", "ESQ", "ESQ.", "DE", "LA", "LE", "VAN", "DER",
         "DEL", "DELLA", "E", "VON", "AL", "BEN", "BIN", "DA", "DAS", "DEN", "DI", "DO", "DOS", "D'", "DU", "EL", "IL",
-        "L'", "MAC", "MC", "O'", "SAINT", "SAINTE", "ST.", "STE.", "TEN", "TER", "V.", "V.D.", "SEN", "ZUM"]
-            let banCount = 0
-        let qArray = document.getElementById('string').value
-            let dArray = qArray.split(" ")
-            let counter = 0
+        "L'", "MAC", "MC", "O'", "SAINT", "SAINTE", "ST.", "STE.", "TEN", "TER", "V.", "V.D.", "SEN", "ZUM"],
+        banCount = 0,
+        qArray = document.getElementById('string').value,
+        dArray = qArray.split(" "),
+        counter = 0
         
-        
+        // Capture ban word match, eliminate fusion between ban word + prior word, halt comparison after match
         checkInput: for (let i = 0; i < dArray.length; i++){
             checkBans: for (let b = 0; b < banWords.length; b++){
                 if (dArray[i].toUpperCase() == banWords[b]){
-                    banCount++ // Used to capture ban word match
-                    dArray.splice(i, 1, " " + dArray[i]) // Used to eliminate fusion between ban word and prior word
-                    break checkBans; // Used to halt comparison between input interator and ban list after match
+                    banCount++ 
+                    dArray.splice(i, 1, " " + dArray[i])
+                    break checkBans;
                 }
             }
-if (banCount == 0){
-counter++
+        if (banCount == 0){
+          counter++
+        } else {
+          banCount--
 }
-else {
-banCount--
-}
-if (counter % 4 == 0){
-    dArray.splice(i, 0, "<br>")
-}
-else if (counter % 2 == 0){
-    dArray.splice(i, 0, " ")
+        if (counter % 4 == 0){
+          dArray.splice(i, 0, "<br>")
+       } else 
+            if (counter % 2 == 0){
+                dArray.splice(i, 0, " ")
 }
 }
-
-    dArray = dArray.join('')
-    document.getElementById('results').innerHTML = "<b>Select and copy the following into excel for formatted rows: </b><br><br>" + dArray
+       dArray = dArray.join('')
+       document.getElementById('results').innerHTML = "<b>Select and copy the following into excel for formatted rows: </b><br><br>" + dArray
     }
     
-    </script>
+</script>
     
-    <textarea type="text" id="string" value="2" style="width: 400; height: 150;" ></textarea>
-    <br><input type=button value="Process" onClick="delimit()"></br>
-    <br><span id="results">(click "Process")</br>
+<textarea type="text" id="string" value="2" style="width: 400; height: 150;" ></textarea>
+<br><input type=button value="Process" onClick="delimit()"></br>
+<br><span id="results">(click "Process")</br>
 </body>
 </html>
