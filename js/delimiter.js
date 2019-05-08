@@ -14,8 +14,8 @@
         // Capture ban word match, eliminate fusion between ban word + prior word, halt comparison after match
         checkInput: for (let i = 0; i < dArray.length; i++){
             checkBans: for (let b = 0; b < banWords.length; b++){
-                if (dArray[i].toUpperCase() == banWords[b] || dArray[i].toUpperCase() == banWords[b]+"."
-                    || dArray[i].toUpperCase() == banWords[b]+"'"){
+                if (dArray[i].toUpperCase() == banWords[b] || dArray[i].toUpperCase() = banWords[b]+"."
+                    || dArray[i].toUpperCase() = banWords[b]+"'"){
                     banCount++ 
                     dArray.splice(i, 1, " " + dArray[i])
                     break checkBans;
