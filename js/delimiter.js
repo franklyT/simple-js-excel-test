@@ -3,9 +3,10 @@
     document.getElementById("string").value = "";
     }
     const delimit = () => {
-        const banWords = ["II", "III", "IV", "V", "JR", "JR.", "SR", "SR.", "ESQ", "ESQ.", "DE", "LA", "LE", "VAN", "DER",
-        "DEL", "DELLA", "E", "VON", "AL", "BEN", "BIN", "DA", "DAS", "DEN", "DI", "DO", "DOS", "D'", "DU", "EL", "IL",
-        "L'", "MAC", "MC", "O'", "SAINT", "SAINTE", "ST.", "STE.", "TEN", "TER", "V.", "V.D.", "SEN", "ZUM"]
+        const banWords = [".", "'", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", 
+                          "S", "T", "U", "V", "W", "X", "Y", "Z", "II", "III", "IV", "V", "JR", "SR", "ESQ", "DE", "LA", "LE", 
+                          "VAN", "DER", "DEL", "DELLA", "VON", "AL", "BEN", "BIN", "DA", "DAS", "DEN", "DI", "DO", "DOS", "DU",
+                          "EL", "IL", "MAC", "MC", "SAINT", "SAINTE", "ST", "STE", "TEN", "TER", "VD", "SEN", "ZUM"]
               
         let counter = 0,
         dArray = String(document.getElementById('string').value).split(" "),
