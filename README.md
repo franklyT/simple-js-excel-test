@@ -24,4 +24,4 @@ As such, I opted for the simple method of ascertaining names based on a common s
 Limitations
 
 
-Middle names (initials can be added to the ban list, but dictionary logic might be necessary here), data with any content except for names, unconventional unhyphenated names
+Middle names (dictionary logic might be necessary here), data with any content except for names, unconventional unhyphenated names
