@@ -11,13 +11,14 @@
     document.getElementById("string").value = "";
     }
     const delimit = () => {
-        let banWords = ["II", "III", "IV", "V", "JR", "JR.", "SR", "SR.", "ESQ", "ESQ.", "DE", "LA", "LE", "VAN", "DER",
+        const banWords = ["II", "III", "IV", "V", "JR", "JR.", "SR", "SR.", "ESQ", "ESQ.", "DE", "LA", "LE", "VAN", "DER",
         "DEL", "DELLA", "E", "VON", "AL", "BEN", "BIN", "DA", "DAS", "DEN", "DI", "DO", "DOS", "D'", "DU", "EL", "IL",
         "L'", "MAC", "MC", "O'", "SAINT", "SAINTE", "ST.", "STE.", "TEN", "TER", "V.", "V.D.", "SEN", "ZUM"],
-        banCount = 0,
         qArray = document.getElementById('string').value,
-        dArray = qArray.split(" "),
-        counter = 0
+        let counter = 0,
+        dArray = document.getElementById('string').value.split(" "),
+        banCount = 0,
+
         
         // Capture ban word match, eliminate fusion between ban word + prior word, halt comparison after match
         checkInput: for (let i = 0; i < dArray.length; i++){
