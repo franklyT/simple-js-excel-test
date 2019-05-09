@@ -24,4 +24,4 @@ As such, I opted for the simple method of ascertaining names based on a common s
 Limitations
 
 
-Middle names (dictionary logic might be necessary here), data with any content except for names, unconventional unhyphenated names
+Middle names (basic research suggests to me that not even the Stanford NER can accomplish this task in non-mixed data sets), mixed data sets (non-name content), unconventional unhyphenated names which run into the middle name problem
