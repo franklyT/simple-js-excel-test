@@ -4,7 +4,7 @@ Repo in GitHub Pages
 </a>
 
 
-Created under the premise of efficiently fulfilling co-worker's basic request to clean and prepare data formatted as a raw list of first and last names with no delimiters without using regex.
+Created under the premise of efficiently fulfilling co-worker's basic request to clean and prepare data formatted as a raw list of first and last names with no delimiters. Regex is not used.
 
 
 Theory
