@@ -18,7 +18,7 @@ This is an incredibly simple script that I used to solve a particular problem at
 If I introduced Giddywazzlefiddlypants McAlienface, you'd be able to understand and use his name without having an explicit reference for either name component under the premise that I have presented you with data following some more or less universal conventions that I have explicitly demarcated as a 'name'. Humans do not have an endless library of names in their heads. This is important for my current employer, whom operates in an international context, as a dictionary of first and last names to reference would almost certainly be incomplete, and heavily cumbersome.
 
 
-As such, I opted for the simple method of ascertaining names based on a common structure of two adjacement words with a space delimiter. A very limited dictionary of ban words is avoids common pitfalls like "Jr.", "Sr.", "III", or one letter initials, which can easily be expanded upon in more languages.
+As such, I opted for the simple method of ascertaining names based on a common structure of two adjacement words with a space delimiter. A very limited dictionary of ban words avoids common pitfalls like "Jr.", "Sr.", "III", or one letter initials, which can easily be expanded upon in more languages.
 
 
 Limitations
