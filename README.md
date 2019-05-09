@@ -20,7 +20,7 @@ If I introduced Gallywazzlefiddlypants McAlienface, you'd be able to understand 
 Here, being invoked is a class of "name", which you already have extensive structures for. Merely having that context of "name" gives you a powerful syntax, and any database that is explicitly, or can be recognized to only contain names easily simplifies our logic.
 
 
-As such, I opted for the simple method of ascertaining names based on a common structure of two adjacement words with a space delimiter. A very limited dictionary of ban words is necessary to avoid common pitfalls like "Jr", "Sr", "Del", "Al", "III", etc., and can be expanded upon in different languages.
+As such, I opted for the simple method of ascertaining names based on a common structure of two adjacement words with a space delimiter. A very limited dictionary of ban words is avoids common pitfalls like "Jr.", "Sr.", "III", or one letter initials., which can easily be expanded upon in more languages.
 
 
 Limitations
