@@ -12,7 +12,7 @@ Created under the premise of efficiently fulfilling co-worker's basic request to
 Theory
 
 
-This is an incredibly simple script that I used to solve a particular problem at work. There are probably better ways of doing it, but this worked for my use case. Regex is not used.
+This is an incredibly simple script that I used to solve a particular problem at work. There are probably better ways of doing it, but this worked for my use case. Regex is not used (<a href="https://github.com/maldici/-simple-js-excel-test-regex" target="_blank" rel"noopener">sister regex repo</a>).
 
 
 If I introduced Giddywazzlefiddlypants McAlienface, you'd be able to understand and use his name without having an explicit reference for either name component under the premise that I have presented you with data following some more or less universal conventions (at least human ones) that I have explicitly demarcated as a 'name'. Humans do not have an endless library of names in their heads. This is important for my current employer, whom operates in an international context, as a dictionary of first and last names to reference would almost certainly be incomplete, and heavily cumbersome.
