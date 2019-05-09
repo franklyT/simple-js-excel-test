@@ -6,7 +6,7 @@ Repo in GitHub Pages
 
 
 </a>
-<u>Regex is not used (<a href="https://github.com/maldici/-simple-js-excel-test-regex" target="_blank" rel="noopener">sister regex repo</a></u>).
+Regex is not used (<a href="https://github.com/maldici/-simple-js-excel-test-regex" target="_blank" rel="noopener">sister regex repo</a>).
 
 
 Created under the premise of efficiently fulfilling co-worker's basic request to clean and prepare data formatted as a raw list of first and last names with no delimiters.
