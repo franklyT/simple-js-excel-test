@@ -1,6 +1,5 @@
     const clearAll = (str, res) => {
-        str.value = ""; str.innerHTML = "";
-        res.innerHTML = "(click 'Process')"; 
+        str.value = ""; str.innerHTML = ""; res.innerHTML = "(click 'Process')"; 
     }
     
     const delimit = (str, res) => {
