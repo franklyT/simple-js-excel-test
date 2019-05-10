@@ -9,15 +9,14 @@
 </script>
 <script async defer src="js/tabletoexcel.js" type="text/javascript">
 </script>
-<table id="testTable"><tbody id="tableWrite"><tr><td></tbody></table>
 <textarea type="text" id="string" value="Fish McFish jr Fishy Fisherton Sr Steve Waterson" style="width: 500px; height: 200px;">Fish McFish jr Fishy Fisherton Sr Steve Waterson</textarea>
-<br><input type=button value="Process" onClick="delimit(String(document.getElementById('string').value), document.getElementById('results'), document.getElementById('tableWrite'))">
+<br><input type=button value="Process" onClick="delimit(String(document.getElementById('string').value), document.getElementById('results')">
 &nbsp; &nbsp;
 <input type=button value="Clear" onClick="clearAll(document.getElementById('string').value, document.getElementById('results'))">
 &nbsp; &nbsp;
 <input type="button" onclick="tableToExcel('testTable', 'W3C Example Table')" value="Export to Excel">
 </br>
-<br><span id="results">(click "Process")
+<br><table id="results"><tbody id="tableWrite"><tr><td></tbody></table>
 </br>
 </body>
 </html>
