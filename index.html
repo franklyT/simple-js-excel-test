@@ -12,7 +12,7 @@
 <textarea type="text" id="string" value="Fish McFish jr Fishy Fisherton Sr Steve Waterson" style="width: 500px; height: 200px;">Fish McFish jr Fishy Fisherton Sr Steve Waterson</textarea>
 <br><input type=button value="Process" onClick="delimit(String(document.getElementById('string').value), document.getElementById('results'))">
 &nbsp; &nbsp;
-<input type=button value="Clear" onClick="clearAll(document.getElementById('string').value, document.getElementById('results'))">
+<input type=button value="Clear" onClick="clearAll(document.getElementById('string'), document.getElementById('results'))">
 &nbsp; &nbsp;
 <input type="button" onclick="tableToExcel('results', 'Exported Results')" value="Export to Excel">
 </br>
