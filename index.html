@@ -13,7 +13,6 @@
 <br><input type=button value="Process" onClick="delimit(String(document.getElementById('string').value), document.getElementById('results')); document.getElementById('export').style='display: block';">
 &nbsp; &nbsp;
 <input type=button value="Clear" onClick="clearAll(document.getElementById('string'), document.getElementById('results')); document.getElementById('export').style='display: none';">
-&nbsp; &nbsp;
 <input type="button" id="export" onclick="tableToExcel('results', 'Exported Results')" style="display:none; padding-top: 100px;" value="Export to Excel">
 </br>
 <br><table id="results"><tbody id="tableWrite"><tr><td></tbody></table>
