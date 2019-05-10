@@ -10,4 +10,4 @@ Created under the premise of efficiently fulfilling co-worker's basic request to
 
 Limitations
 
-Middle names (as far am I'm aware, Stanford NER algorithms can't even accomplish this task, and seems doubly impossible for non-mixed data sets, i.e. names followed by subsequent names and not just other data), mixed data sets (non-name content), and unconventional unhyphenated names which run into the middle name problem.
+Middle names (as far am I'm aware, Stanford NER algorithms can't even accomplish this task, and seems doubly difficult for non-mixed data sets, i.e. names followed by subsequent names and not just other data), mixed data sets (non-name content), and unconventional unhyphenated names which run into the middle name problem.
