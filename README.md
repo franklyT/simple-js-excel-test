@@ -5,7 +5,7 @@
 Repo in GitHub Pages
 </a>
 
-Created under the premise of efficiently fulfilling co-worker's basic request to clean and prepare bulk data formatted as a raw list of first and last names with no delimiters. Various common name modifiers are accounted for, as are middle initials. 10,000 names took ~50-100ms on my work PC in Chrome 74.
+Created under the premise of efficiently fulfilling co-worker's basic request to clean and prepare bulk data formatted as a raw list of first and last names with no delimiters. Various common name modifiers are accounted for, as are middle initials. 10,000 names took ~50-100ms, 100,000 names 1s to parse and write to DOM on my work PC in Chrome 74.
 
 
 Limitations
