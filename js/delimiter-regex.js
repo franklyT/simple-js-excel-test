@@ -1,5 +1,5 @@
     const clearAll = (str, res) => {
-        str = "";
+        str.value = ""; str.innerHTML = "";
         res.innerHTML = "(click 'Process')"; 
     }
     
