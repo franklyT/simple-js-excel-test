@@ -3,8 +3,8 @@ const grabMetadata = () => {
         str = String(document.getElementById('string').value),
         res = document.getElementById('results'),
         md = document.getElementById('metadata'),
-        ex1 = performance.now();
   
+        ex1 = performance.now(); 
   delimit(str, res);
   const ex2 = performance.now();
   
