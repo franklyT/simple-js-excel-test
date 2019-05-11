@@ -2,7 +2,7 @@ const grabMetadata = () => {
   const exp = document.getElementById('export'),
         str = String(document.getElementById('string').value),
         res = document.getElementById('results'),
-        md = document.getElementById("metadata"),
+        md = document.getElementById('metadata'),
         ex1 = performance.now(),
         ex2;
   
@@ -17,7 +17,7 @@ const grabMetadata = () => {
             Math.round((ex2 - ex1)*1000 / 1000) + 
            ' ms to execute.' + 
            '<br>' +
-           (document.getElementsByTagName("TR").length+1) +
+           (document.getElementsByTagName('TR').length+1) +
            ' names processed.';
   }
 }
