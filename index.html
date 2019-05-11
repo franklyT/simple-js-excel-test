@@ -14,7 +14,7 @@
 <textarea type="text" id="string" value="Fish McFish jr Fishy Fisherton Sr Steve Waterson" style="width: 500px; height: 200px;">Fish McFish jr Fishy Fisherton Sr Steve Waterson</textarea>
 <br><input type=button value="Process" onClick="grabMetadata(String(document.getElementById('string').value), document.getElementById('results')); document.getElementById('export').style='display: block';">
 &nbsp; &nbsp;
-<input type=button value="Clear" onClick="clearAll(document.getElementById('string'), document.getElementById('results')); document.getElementById('export').style='display: none';">
+<input type=button value="Clear" onClick="clearAll(document.getElementById('string'), document.getElementById('results'), document.getElementById('metadata')); document.getElementById('export').style='display: none';">
 </br>
 <br><input type="button" id="export" onclick="tableToExcel('results', 'Exported Results')" style="display:none;" value="Export to Excel">
 <p id="metadata" style="font-weight: bold;"></p>
