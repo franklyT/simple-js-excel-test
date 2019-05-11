@@ -2,7 +2,7 @@ const grabMetadata = (str, res) => {
   const ex1 = performance.now();
   delimit(str, res);
   const ex2 = performance.now();
-  const md = document.getElementById("metadata")
+  const md = document.getElementById("metadata");
   if(str.innerHTML.length > 0) {
       md.innerHTML = 
            '~' +
