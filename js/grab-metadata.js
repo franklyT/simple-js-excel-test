@@ -3,7 +3,7 @@ const grabMetadata = (str, res) => {
   delimit(str, res);
   const ex2 = performance.now();
   const md = document.getElementById("metadata");
-  if(str.innerHTML.length > 0) {
+  if(document.getElementById("results").innerHTML.length > 0) {
       md.innerHTML = 
            '~' +
             Math.round((ex2 - ex1)*1000 / 1000) + 
