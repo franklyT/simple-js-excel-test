@@ -7,10 +7,9 @@ const grabMetadata = () => {
         ex1 = performance.now(); 
   delimit(str, res);
   const ex2 = performance.now();
-  
-  exp.style='display: block';
-  
+    
   if(res.innerHTML.length) {
+      exp.style='display: block';
       md.innerHTML = 
            '~' +
             Math.round((ex2 - ex1)*1000 / 1000) + 
