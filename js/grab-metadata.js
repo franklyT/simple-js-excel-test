@@ -4,7 +4,7 @@ const grabMetadata = () => {
         res = document.getElementById('results'),
         md = document.getElementById('metadata'),
         ex1 = performance.now(),
-        ex2;
+        ex2 = 0;
   
   delimit(str, res);
   ex2 = performance.now();
