@@ -10,7 +10,7 @@ const grabMetadata = () => {
   
   exp.style='display: block';
   
-  if(res.innerHTML.length > 0) {
+  if(res.innerHTML.length) {
       md.innerHTML = 
            '~' +
             Math.round((ex2 - ex1)*1000 / 1000) + 
