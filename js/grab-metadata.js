@@ -1,11 +1,13 @@
 const grabMetadata = () => {
-  const exp = document.getElementById('export');
-  const str = String(document.getElementById('string').value);
-  const res = document.getElementById('results')
-  const md = document.getElementById("metadata");
-  const ex1 = performance.now();
+  const exp = document.getElementById('export'),
+        str = String(document.getElementById('string').value),
+        res = document.getElementById('results'),
+        md = document.getElementById("metadata"),
+        ex1 = performance.now(),
+        ex2;
+  
   delimit(str, res);
-  const ex2 = performance.now();
+  ex2 = performance.now();
   
   exp.style='display: block';
   
